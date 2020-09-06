@@ -1,0 +1,78 @@
+.wrapper {
+  width: 100vw;
+  top: 0;
+  position: fixed;
+  z-index: 100;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.link {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  /* color: #fff1e8; */
+}
+
+#about:hover {
+  color: #ff004d;
+}
+
+#projects:hover {
+  color: #ffa300;
+}
+
+#blog:hover {
+  color: #00e436;
+}
+
+#contact:hover {
+  color: #29adff;
+}
+
+#about:active {
+  color: #ff004d;
+}
+
+#projects:active {
+  color: #ffa300;
+}
+
+#blog:active {
+  color: #00e436;
+}
+
+#contact:active {
+  color: #29adff;
+}
+
+.light {
+  color: #fff1e8;
+}
+
+.dark {
+  color: #1d2b53;
+}
+
+.deactive {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    display: flex;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navList {
+    display: none;
+  }
+}

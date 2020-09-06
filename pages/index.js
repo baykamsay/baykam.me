@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import Navbar from "../components/navbar";
 
 export default function Home() {
   return (
@@ -9,6 +10,8 @@ export default function Home() {
         <title>Baykam Say</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Navbar active={false} color={0} />
 
       <main className={styles.main}>
         <div className={styles.center}>
@@ -62,13 +65,27 @@ export default function Home() {
                 justifyContent: "center",
               }}
             >
-              <a href="#">
+              <a
+                href="https://twitter.com/BaykamSay"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="nes-icon twitter" />
               </a>
-              <a style={{ marginLeft: "1rem" }} href="#">
+              <a
+                style={{ marginLeft: "1rem" }}
+                href="https://www.linkedin.com/in/baykam-say/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="nes-icon linkedin" />
               </a>
-              <a style={{ marginLeft: "1rem" }} href="#">
+              <a
+                style={{ marginLeft: "1rem" }}
+                href="https://github.com/baykamsay"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="nes-icon github" />
               </a>
             </div>
