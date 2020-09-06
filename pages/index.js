@@ -35,16 +35,25 @@ export default function Home() {
             </Link>
           </div>
           <div className={styles.right}>
-            <h1>Baykam Say</h1>
+            <img
+              src="/baykam-say.png"
+              alt="Me"
+              width={150}
+              style={{ borderRadius: "1000px", marginBottom: "1rem" }}
+            />
+            <h1 style={{ marginBottom: "2rem" }}>Baykam Say</h1>
             <p>
               Hello, I'm Baykam. I am a computer engineering student at Bilkent
               University.
             </p>
-            {/* <button>Download CV</button> */}
-            <a href="#" className="nes-btn">
+            <a
+              href="#"
+              className="nes-btn is-purple"
+              style={{ margin: "1rem 0 2rem 0" }}
+            >
               Download CV
             </a>
-            <h2>Follow me on:</h2>
+            <h2 style={{ marginBottom: "1rem" }}>Follow me on:</h2>
             <div
               style={{
                 width: "100%",
@@ -56,10 +65,10 @@ export default function Home() {
               <a href="#">
                 <i className="nes-icon twitter" />
               </a>
-              <a href="#">
+              <a style={{ marginLeft: "1rem" }} href="#">
                 <i className="nes-icon linkedin" />
               </a>
-              <a href="#">
+              <a style={{ marginLeft: "1rem" }} href="#">
                 <i className="nes-icon github" />
               </a>
             </div>

@@ -21,3 +21,41 @@ body {
 * {
   box-sizing: border-box;
 }
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+.is-purple {
+  color: #fff1e8;
+  background-color: #008751;
+}
+
+.is-purple::after {
+  box-shadow: inset -4px -4px #01633c;
+}
+
+.is-purple:hover {
+  color: #fff1e8;
+  background-color: #007546;
+}
+
+.is-purple:hover::after {
+  box-shadow: inset -6px -6px #01633c;
+}
+
+.is-purple:focus {
+  box-shadow: 0 0 0 0 #000000;
+}
+
+.is-purple:active:not(.is-disabled)::after {
+  box-shadow: inset 4px 4px #01633c;
+}
