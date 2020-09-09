@@ -1,5 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+
+// $theme-colors: (
+//   "primary": #88c0d0,
+//   "secondary": #8fbcbb,
+//   "danger": #bf616a,
+//   "warning": #ebcb8b,
+//   "success": #a3be8c,
+//   "info": #b48ead,
+//   "light": #e5e9f0,
+// );
+
+// $body-bg: #eceff4;
+// $body-color: #2e3440;
+// $text-muted: yellow;
+
+// grays changed
+$white: #fff !default;
+$gray-100: #eceff4 !default;
+$gray-200: $gray-100 !default;
+$gray-300: #e5e9f0 !default;
+$gray-400: $gray-300 !default;
+$gray-500: #d8dee9 !default;
+$gray-600: #4c566a !default;
+$gray-700: #434c5e !default;
+$gray-800: #3b4252 !default;
+$gray-900: #2e3440 !default;
+$black: $gray-900 !default;
+
+// colors changed
+$blue: #81a1c1 !default;
+$indigo: #5e81ac !default;
+$purple: #b48ead !default;
+$pink: #e83e8c !default;
+$red: #bf616a !default;
+$orange: #d08770 !default;
+$yellow: #ebcb8b !default;
+$green: #a3be8c !default;
+$teal: #8fbcbb !default;
+$cyan: #88c0d0 !default;
+
 $theme-colors: (
-  "test": #f0f000,
+  "primary": $cyan,
+  "secondary": $teal,
 );
+
+$font-family-base: "PT Mono", monospace;
 
 @import "~bootstrap/scss/bootstrap";
