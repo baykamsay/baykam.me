@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import styles from "../styles/Home.module.scss";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className="background">
         <Container>
           <Row
             className={styles.row}
@@ -22,12 +23,10 @@ export default function Home() {
               style={{
                 display: "flex",
                 flexDircetion: "column",
-                // flexWrap: "wrap",
                 flexFlow: "column wrap",
                 justifyContent: "center",
                 alignItems: "center",
                 alignContent: "center",
-                // textAlign: "center",
               }}
             >
               <h1 style={{ textAlign: "center" }}>Hello, I'm Baykam.</h1>
@@ -35,13 +34,18 @@ export default function Home() {
                 I am a computer engineering student at Bilkent University.
               </h4>
               <Row style={{ marginBottom: "1rem" }}>
-                <Button variant="primary">Download CV</Button>
-                <Button
-                  variant="outline-primary"
-                  style={{ marginLeft: "1rem" }}
-                >
-                  My Projects
+                <Button href="/baykam-say-cv.pdf" variant="primary" download>
+                  Download CV
                 </Button>
+                <Link href="/projects" passHref>
+                  <Button
+                    variant="outline-primary"
+                    style={{ marginLeft: "1rem" }}
+                    as="a"
+                  >
+                    My Projects
+                  </Button>
+                </Link>
               </Row>
               <Row style={{ marginBottom: "1rem" }}>
                 <a
@@ -131,7 +135,7 @@ export default function Home() {
                 src="/baykam-say.png"
                 alt="Me"
                 rounded
-                className={styles.profile}
+                className={[styles.profile, "shadow"].join(" ")}
               />
             </Col>
           </Row>

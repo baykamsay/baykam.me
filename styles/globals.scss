@@ -1,10 +1,14 @@
 @import "./styles/bootstrapTheme.scss";
 
+.background {
+  // background-image: url("/background.svg");
+  // background-repeat: no-repeat;
+  // background-position: center center;
+  // background-size: cover;
+  // background-attachment: fixed;
+  background-color: $white;
+}
+
 body {
-  background-image: url("/background.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  // background-size: 1920px 1080px;
-  background-size: cover;
-  background-attachment: fixed;
+  background-color: $gray-100;
 }
