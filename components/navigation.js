@@ -4,6 +4,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 export default function Navigation() {
   return (
     <Navbar bg="white" expand="md" fixed="top" className="shadow-sm">
+      {/* remove shadow from home maybe */}
       <Container>
         <Link href="/" passHref>
           <Navbar.Brand>Home</Navbar.Brand>

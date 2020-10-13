@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Container } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
 
 export default function About() {
   return (
@@ -10,11 +10,19 @@ export default function About() {
       </Head>
 
       <main>
+        {/* put image and title outside the container */}
         <Container
-          className="bg-white"
+          className="bg-white shadow"
           style={{ minHeight: "100vh", paddingTop: "56px" }}
         >
           <Container fluid="md" style={{ maxWidth: 800, marginTop: "2rem" }}>
+            <img
+              src="/baykam-say.png"
+              alt="Me"
+              rounded
+              className="shadow"
+              style={{ marginTop: "1rem", width: 200 }}
+            />
             <h1>About Me</h1>
             <p>
               I'm a computer engineering student at Bilkent University and a

@@ -131,12 +131,7 @@ export default function Home() {
                 alignItems: "center",
               }}
             >
-              <Image
-                src="/baykam-say.png"
-                alt="Me"
-                rounded
-                className={[styles.profile, "shadow"].join(" ")}
-              />
+              <Image src="/coding.svg" alt="Me" />
             </Col>
           </Row>
         </Container>
