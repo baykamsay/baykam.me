@@ -131,7 +131,11 @@ export default function Home() {
                 alignItems: "center",
               }}
             >
-              <Image src="/coding.svg" alt="Me" />
+              <Image
+                src="/coding.svg"
+                alt="Me"
+                title="Illustration by Freepik Stories - https://stories.freepik.com/web"
+              />
             </Col>
           </Row>
         </Container>
