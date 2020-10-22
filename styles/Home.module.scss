@@ -1,18 +1,7 @@
-.profile {
-  max-width: 350px;
-}
-
-@media screen and (max-width: 768px) {
-  .row {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-  }
-  .col {
-    height: 50%;
-  }
-  .profile {
-    margin-top: 1rem;
-    width: 150px;
-  }
-}
+// @media screen and (max-width: 768px) {
+//   .row {
+//     display: flex;
+//     flex-flow: column;
+//     justify-content: center;
+//   }
+// }

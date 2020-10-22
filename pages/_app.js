@@ -1,10 +1,10 @@
 import "../styles/globals.scss";
-import Navigation from "../components/navigation";
+// import Navigation from "../components/navigation";
 
 function MyApp({ Component, pageProps }) {
   return (
     <div>
-      <Navigation />
+      {/* <Navigation /> */}
       <Component {...pageProps} />
     </div>
   );

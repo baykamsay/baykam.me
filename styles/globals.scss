@@ -1,14 +1,49 @@
 @import "./styles/bootstrapTheme.scss";
 
-.background {
-  // background-image: url("/background.svg");
-  // background-repeat: no-repeat;
-  // background-position: center center;
-  // background-size: cover;
-  // background-attachment: fixed;
+body {
   background-color: $white;
 }
 
-body {
-  background-color: $gray-100;
+h1 {
+  font-weight: bold;
+}
+
+.bilkent {
+  color: #d73a49;
+}
+
+.bilkent:hover {
+  color: #a3212e;
+}
+
+.github {
+  color: #6f42c1;
+}
+
+.github:hover {
+  color: #4e2d89;
+}
+
+.linkedin {
+  color: #0077b5;
+}
+
+.linkedin:hover {
+  color: #004568;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+.twitter:hover {
+  color: #0b76b8;
+}
+
+.resume {
+  color: #28a745;
+}
+
+.resume:hover {
+  color: #19692b;
 }
