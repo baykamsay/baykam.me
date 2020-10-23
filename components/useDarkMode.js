@@ -15,7 +15,14 @@ export function useDarkMode() {
 
   useEffect(() => {
     const localTheme = window.localStorage.getItem("theme");
-    localTheme && setDark(localTheme === "true" ? true : false);
+    console.log();
+    if (localTheme) {
+      setDark(localTheme === "true" ? true : false);
+    } else if (window.matchMedia) {
+      setDark(
+        window.matchMedia("(prefers-color-scheme: dark)").matches ? true : false
+      );
+    }
   }, []);
   return [dark, toggle];
 }
