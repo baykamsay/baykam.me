@@ -1,13 +1,15 @@
 @import "./styles/variables.scss";
 
 body {
-  background-color: $white;
+  // background-color: $white;
   padding: 0;
   margin: 0;
   font-family: $font-family;
 }
 
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -65,8 +67,15 @@ p {
   max-width: 824px;
   min-height: 100vh;
   margin: auto;
+  margin-top: -100px;
   padding: 56px 12px;
   justify-content: center;
   display: flex;
   flex-flow: column;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: -56px;
+  }
 }
