@@ -35,8 +35,8 @@ export default function Home() {
             >
               GitHub
             </a>{" "}
-            profile. I am currently open to working opportunities. If you'd
-            like, you can view my{" "}
+            profile. I am open to working opportunities so if you'd like, you
+            can view my{" "}
             <a
               href="https://www.linkedin.com/in/baykam-say/"
               target="_blank"
