@@ -7,7 +7,6 @@
 }
 
 .nav {
-  // background-color: wheat;
   width: 800px;
   justify-content: space-between;
   display: flex;
@@ -21,6 +20,12 @@
   color: inherit;
   background-color: transparent;
   cursor: pointer;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  image-rendering: crisp-edges;
 }
 
 @media screen and (max-width: 768px) {

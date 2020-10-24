@@ -61,6 +61,18 @@ export default function Home() {
             </a>
             .
           </p>
+          <p>
+            You can contact me{" "}
+            <a
+              href="https://forms.gle/miF2GVCMQvbk76ST7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact"
+            >
+              here
+            </a>
+            .
+          </p>
         </div>
       </main>
     </div>

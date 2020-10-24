@@ -4,7 +4,11 @@ export default function Navigation(props) {
   return (
     <div className={styles.navContainer}>
       <div className={styles.nav}>
-        <span>logo</span>
+        {props.dark ? (
+          <img src="/logo-light.png" alt="logo" className={styles.logo} />
+        ) : (
+          <img src="/logo-dark.png" alt="logo" className={styles.logo} />
+        )}
         <button className={styles.svgButton} onClick={props.click}>
           {props.dark ? (
             <svg
@@ -15,8 +19,8 @@ export default function Navigation(props) {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              width="32px"
-              height="32px"
+              width="50px"
+              height="50px"
             >
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
@@ -29,8 +33,8 @@ export default function Navigation(props) {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              width="32px"
-              height="32px"
+              width="50px"
+              height="50px"
             >
               <circle cx="12" cy="12" r="5"></circle>
               <line x1="12" y1="1" x2="12" y2="3"></line>
