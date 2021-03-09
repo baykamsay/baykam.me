@@ -10,7 +10,7 @@ export default function Home() {
 
       <main>
         <div className="container">
-          <h1 style={{ fontSize: "3rem" }}>Hello, I'm Baykam.</h1>
+          <h1>Hello, I'm Baykam.</h1>
           <p>
             Currently, I am studying computer engineering at{" "}
             <a

@@ -82,6 +82,14 @@ p {
 }
 
 @media screen and (max-width: 848px) {
+  h1 {
+    font-size: $font-size-base * 1.6;
+  }
+
+  p {
+    font-size: $font-size-base * .8;
+  }
+
   .container {
     margin-top: -79px;
     padding: 79px 24px;
