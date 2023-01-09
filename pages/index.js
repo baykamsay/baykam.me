@@ -12,14 +12,14 @@ export default function Home() {
         <div className="container">
           <h1>Hello, I'm Baykam.</h1>
           <p>
-            Currently, I am studying computer engineering at{" "}
+            Currently, I am studying computer science at{" "}
             <a
-              href="https://w3.bilkent.edu.tr/bilkent/"
+              href="https://www.tum.de/en/"
               target="_blank"
               rel="noopener noreferrer"
               className="bilkent"
             >
-              Bilkent University
+              Technical University of Munich
             </a>
             .
           </p>
